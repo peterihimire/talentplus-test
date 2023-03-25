@@ -1,0 +1,119 @@
+.nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: flex-end;
+  // margin-left: 200px;
+
+  // 2.5K
+  @media (max-width: 2560px) {
+    // margin-left: 550px;
+  }
+  // FULL HD
+  @media (max-width: 1920px) {
+    // margin-left: 330px;
+  }
+  // 13 RETINA MAC
+  @media screen and (max-width: 1680px) {
+    // margin-left: 250px;
+  }
+  // WINDOWS
+  @media screen and (max-width: 1366px) {
+    // margin-left: 330px;
+  }
+  // HD
+  @media screen and (max-width: 1280px) {
+    // margin-left: 330px;
+  }
+
+  @media (max-width: 1264px) {
+    position: fixed;
+    top: 70px;
+    left: -100vw;
+    // right: -100vw;
+    z-index: 250;
+    transition: left 0.4s ease-in-out;
+    // transition: right 0.4s ease-in-out;
+    background: var(--white);
+    display: initial;
+    justify-content: stretch;
+    align-items: stretch;
+    margin-left: 0;
+    overflow-y: auto;
+    padding: 40px 16px 120px;
+    width: 300px;
+
+    &.show {
+      left: 0;
+      // right: 0;
+    }
+
+    &.hidden {
+      overflow: hidden;
+    }
+  }
+
+  @media screen and (max-width: 299px) {
+    width: 280px;
+  }
+
+  .navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 1264px) {
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: stretch;
+      width: var(--full);
+      height: auto;
+    }
+
+    > li {
+      margin-right: 26px;
+      width: fit-content;
+      height: fit-content;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      @media (max-width: 1264px) {
+        margin-bottom: 40px;
+        width: var(--full);
+        margin-right: 0px;
+      }
+
+      > a {
+        font-size: 16px;
+        line-height: 22px;
+        color: #AAC4E6;;
+        // font-family: NotoSans-Bold, sans-serif;
+        text-transform: capitalize;
+
+        @media (max-width: 1264px) {
+          color: var(--head-txt) !important;
+          font-size: 16px;
+        }
+
+        &:hover {
+          color: var(--main-color) !important;
+        }
+      }
+
+      .active {
+        color: var(--white) !important;
+        // font-size: 16px;
+        font-family: Poppins-Bold, sans-serif;
+        font-weight: 700;
+      }
+    }
+
+    .nav-btn-div {
+      margin-left: 50px;
+    }
+  }
+}
