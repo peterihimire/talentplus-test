@@ -7,7 +7,12 @@
   left: 0;
   z-index: 300;
   background: transparent;
-  transition: background 0.4s ease-in-out;
+  transition: 1s ease-in-out;
+  // transition: background 0.4s ease-in-out;
+
+  @media (max-width: 900px) {
+    height: 70px;
+  }
 
   &.bgDark {
     background: rgba(0, 0, 0, 0.9);
@@ -16,7 +21,9 @@
     background: rgba(250, 249, 249, 0.9);
   }
   &.bgHeader {
-    background-color: var(--white);
+    background-color: var(--main-color);
+    height: 70px;
+    transition: 1s ease-in-out;
   }
   .wrapper {
     // width: 67%;
@@ -41,11 +48,15 @@
 
     .logo {
       width: 200px;
-      height: fit-content;
+      // height: fit-content;
 
       img {
         // width: 45px;
         // height: 45px;
+
+        @media (max-width: 700px) {
+          width: 120px;
+        }
       }
       > a {
         width: 102px;

@@ -15,7 +15,7 @@ const HomePage = () => {
   return (
     <div className={`homepage`}>
       <Helmet>
-        <title>Home - Benkih</title>
+        <title>TechTime - Home</title>
       </Helmet>
 
       <HomeHero />

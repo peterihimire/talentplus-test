@@ -1,12 +1,12 @@
 .footer {
   width: 100%;
-  padding: 150px 0 150px;
+  padding: 150px 0 250px;
   color: var(--white);
   // background: url(../../../assets/images/dotted-bg.png);
   background-color: var(--dark);
 
   @media (max-width: 903px) {
-    padding: 150px 0 150px;
+    padding: 150px 0 250px;
   }
 
   .wrapper {

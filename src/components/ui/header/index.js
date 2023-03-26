@@ -48,13 +48,7 @@ const Header = ({ isOpen, clicked }) => {
       <div className="wrapper">
         <div className="logo">
           <Link to="/">
-            {/* BRID<span>GET</span> */}
-            {/* <Logo /> */}
-            {bgChange ? (
-              <img src={logoBlack} alt="" />
-            ) : (
-              <img src={logo} alt="" />
-            )}
+            <img src={logo} alt="" />
           </Link>
         </div>
 
@@ -76,7 +70,7 @@ const Header = ({ isOpen, clicked }) => {
               <span
                 className={`${
                   bgChange
-                    ? "hamburger-inner hamburger-inner-dark"
+                    ? "hamburger-inner hamburger-inner-light"
                     : "hamburger-inner hamburger-inner-light"
                 }`}
               ></span>

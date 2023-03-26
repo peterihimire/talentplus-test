@@ -36,7 +36,7 @@
     z-index: 250;
     transition: left 0.4s ease-in-out;
     // transition: right 0.4s ease-in-out;
-    background: var(--white);
+    background: var(--main-color);
     display: initial;
     justify-content: stretch;
     align-items: stretch;
@@ -90,12 +90,12 @@
       > a {
         font-size: 16px;
         line-height: 22px;
-        color: #AAC4E6;;
+        color: #aac4e6;
         // font-family: NotoSans-Bold, sans-serif;
         text-transform: capitalize;
 
         @media (max-width: 1264px) {
-          color: var(--head-txt) !important;
+          color: #aac4e6;
           font-size: 16px;
         }
 
@@ -114,6 +114,10 @@
 
     .nav-btn-div {
       margin-left: 50px;
+
+      @media (max-width: 900px) {
+        margin-left: 0px;
+      }
     }
   }
 }

@@ -1,25 +1,25 @@
 import React, { useEffect } from "react";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
-// import prodImg from "../../../assets/images/product8.png";
 
-// import {
-//   ShoppingCartOutlined,
-//   FavoriteBorderOutlined,
-//   Search,
-// } from "@mui/icons-material";
+import { ReactComponent as TimeIcon } from "../../../assets/images/schedule.svg";
+import { ReactComponent as BookIcon } from "../../../assets/images/menu_book.svg";
+import { ReactComponent as StarIcon } from "../../../assets/images/star.svg";
 
 import "./styles.scss";
 
 const CourseCard = ({
   id,
-  addProd,
-  infoProd,
-  likeProd,
+  instructor,
+  lessons,
+  star,
+  category,
   image,
   title,
   price,
-  slash,
+  reviews,
+  time,
+  pix,
 }) => {
   // useEffect(() => {
   //   AOS.init({ duration: 2000 });
@@ -32,31 +32,38 @@ const CourseCard = ({
         <div className={`image-div`}>
           <img src={image} alt="" />
         </div>
-        <ul className={`product-actions`}>
-          <li onClick={addProd} className={`product-act`}>
-            {/* <ShoppingCartOutlined className={`shop-icon`} /> */}
-          </li>
-          <li onClick={infoProd} className={`product-act`}>
-            {/* <Search className={`shop-icon`} /> */}
-          </li>
-          <li onClick={likeProd} className={`product-act`}>
-            {/* <FavoriteBorderOutlined className={`shop-icon`} /> */}
-          </li>
-        </ul>
-        {/* <div className={`title-price`}>
+
+        <div className={`cat-star`}>
+          <div className={`category-div`}>
+            <p>{category}</p>
+          </div>
+
+          <div>
+            <p>
+              {star} <StarIcon />
+              <span>{`(${reviews}k+)`}</span>
+            </p>
+          </div>
+        </div>
         <h5>{title}</h5>
-        <h6>
-          ${price}
-          <span>${price}</span>
-        </h6>
-      </div> */}
-      </div>
-      <div className={`title-price`}>
-        <h5>{title}</h5>
-        <h6>
-          ${price}
-          <span>${price}</span>
-        </h6>
+        <div className={`time-lesson`}>
+          <div className={`icon-span`}>
+            <TimeIcon />
+            <span>{time}</span>
+          </div>
+
+          <div className={`icon-span`}>
+            <BookIcon />
+            <span>{lessons} Lessons</span>
+          </div>
+        </div>
+        <div className={`instructor-price`}>
+          <div className={`instructor-wrapper`}>
+            <img src={pix} alt="" width="40px" height="40px" />
+            <span>{instructor}</span>
+          </div>
+          <h6>${price}.00</h6>
+        </div>
       </div>
     </div>
   );

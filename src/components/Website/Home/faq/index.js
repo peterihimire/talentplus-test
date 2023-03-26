@@ -35,7 +35,7 @@ const Faq = () => {
                   <h4>Frequency Asked Questions?</h4>
                 </div>
                 <div className={`rotate`}>
-                  {clicked === 0 ? <Plus /> : <Minus />}
+                  {clicked === 0 ? <Minus /> : <Plus />}
                 </div>
               </button>
 
@@ -57,7 +57,7 @@ const Faq = () => {
                   <h4 className={`difficulty`}>Frequency Asked Questions?</h4>
                 </div>
                 <div className={`rotate`}>
-                  {clicked === 1 ? <Plus /> : <Minus />}
+                  {clicked === 1 ? <Minus /> : <Plus />}
                 </div>
               </button>
 
@@ -79,7 +79,7 @@ const Faq = () => {
                   <h4 className={`difficulty`}>Frequency Asked Questions?</h4>
                 </div>
                 <div className={`rotate`}>
-                  {clicked === 2 ? <Plus /> : <Minus />}
+                  {clicked === 2 ? <Minus /> : <Plus />}
                 </div>
               </button>
 
@@ -101,7 +101,7 @@ const Faq = () => {
                   <h4 className={`difficulty`}>Frequency Asked Questions?</h4>
                 </div>
                 <div className={`rotate`}>
-                  {clicked === 3 ? <Plus /> : <Minus />}
+                  {clicked === 3 ? <Minus /> : <Plus />}
                 </div>
               </button>
 
