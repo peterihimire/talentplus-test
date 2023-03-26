@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { KeyboardArrowDown, KeyboardArrowRight } from "@mui/icons-material";
+import { ReactComponent as Plus } from "../../../assets/images/plus.svg";
+import { ReactComponent as Minus } from "../../../assets/images/minus.svg";
+
 import "./styles.scss";
 
 const Accordion = ({ title, content, focus }) => {
@@ -23,7 +25,7 @@ const Accordion = ({ title, content, focus }) => {
           <h4>{title}</h4>
         </div>
         <div className={`rotate`}>
-          {clicked === focus ? <KeyboardArrowDown /> : <KeyboardArrowRight />}
+          {clicked === focus ? <Minus /> : <Plus />}
         </div>
       </button>
 

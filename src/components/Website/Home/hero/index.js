@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 import "./styles.scss";
 
-const Hero = () => {
+const WhyAreBest = () => {
   return (
     <section className={`hero-header`}>
       <div className="wrapper">
@@ -41,4 +41,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default WhyAreBest;

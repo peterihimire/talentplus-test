@@ -11,7 +11,7 @@ import React, { useEffect } from "react";
 
 import "./styles.scss";
 
-const ProductCard = ({
+const CourseCard = ({
   id,
   addProd,
   infoProd,
@@ -28,9 +28,8 @@ const ProductCard = ({
 
   return (
     <div>
-      <div data-aos="zoom-in" className={`product-card`} key={id}>
-        <div className={`circle-div`}></div>
-        <div className={`product-div`}>
+      <div data-aos="zoom-in" className={`course-card`} key={id}>
+        <div className={`image-div`}>
           <img src={image} alt="" />
         </div>
         <ul className={`product-actions`}>
@@ -63,4 +62,4 @@ const ProductCard = ({
   );
 };
 
-export default ProductCard;
+export default CourseCard;

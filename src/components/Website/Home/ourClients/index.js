@@ -15,9 +15,9 @@ import "./styles.scss";
 
 SwiperCore.use([Navigation, Autoplay]);
 
-const HomeCategories = () => {
+const OurClients = () => {
   return (
-    <section className={`home-categories`}>
+    <section className={`our-clients`}>
       <div className="wrapper">
         <div className={`companies-wrapper`}>
           <div className={`company-item`}>
@@ -41,4 +41,4 @@ const HomeCategories = () => {
   );
 };
 
-export default HomeCategories;
+export default OurClients;

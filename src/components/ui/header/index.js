@@ -4,6 +4,7 @@ import Nav from "../nav";
 import { useLocation } from "react-router-dom";
 // import { ReactComponent as Logo } from "../../../assets/images/logo.svg";
 import logo from "../../../assets/images/logo.svg";
+import logoBlack from "../../../assets/images/logo-black.svg";
 import "./styles.scss";
 
 const Header = ({ isOpen, clicked }) => {
@@ -49,7 +50,11 @@ const Header = ({ isOpen, clicked }) => {
           <Link to="/">
             {/* BRID<span>GET</span> */}
             {/* <Logo /> */}
-            <img src={logo} alt="" />
+            {bgChange ? (
+              <img src={logoBlack} alt="" />
+            ) : (
+              <img src={logo} alt="" />
+            )}
           </Link>
         </div>
 
@@ -69,7 +74,11 @@ const Header = ({ isOpen, clicked }) => {
           >
             <span className="hamburger-box">
               <span
-                className={`${"hamburger-inner hamburger-inner-dark"}`}
+                className={`${
+                  bgChange
+                    ? "hamburger-inner hamburger-inner-dark"
+                    : "hamburger-inner hamburger-inner-light"
+                }`}
               ></span>
             </span>
           </button>

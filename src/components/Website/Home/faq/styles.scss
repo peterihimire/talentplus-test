@@ -1,0 +1,203 @@
+.faq {
+  position: relative;
+  background-color: var(--white);
+  padding: 100px 0px;
+
+  .newsletter-head {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+
+    h3 {
+      font-size: 56px;
+      line-height: 70px;
+      font-weight: 700;
+
+      // 13 RETINA MAC
+      @media screen and (max-width: 1680px) {
+        // margin-left: 250px;
+        font-size: 46px;
+        font-style: normal;
+        line-height: 60px;
+        font-weight: 700;
+      }
+      // WINDOWS
+      @media screen and (max-width: 1366px) {
+        // margin-left: 330px;
+      }
+      // HD
+      @media screen and (max-width: 1280px) {
+        // margin-left: 330px;
+      }
+
+      @media screen and (max-width: 700px) {
+        font-size: 40px;
+        font-style: normal;
+        line-height: 50px;
+        font-weight: 700;
+      }
+    }
+
+    p {
+      line-height: 26px;
+      margin: 20px 0px 60px 0;
+    }
+
+    @media screen and (max-width: 900px) {
+      max-width: 530px;
+      margin: 0 auto;
+    }
+  }
+
+  .feature-icon {
+    font-size: 50px;
+    color: var(--main-color);
+  }
+
+  .newsletter-wrapper {
+    max-width: 530px !important;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p {
+      margin-bottom: 10px;
+      color: var(--txt-light);
+      font-family: NotoSans-Regular, sans-serif;
+      font-size: 14px;
+    }
+    .form {
+      width: 100% !important;
+      font-family: NotoSans-Regular, sans-serif;
+      font-size: 14px;
+    }
+  }
+
+  .accordion-wrapper {
+    max-width: 830px !important;
+    margin: 0 auto;
+
+    .accordion {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      > li {
+        // background: #f2f2f2;
+        border-bottom: 1px solid #eaeaea;
+        border-radius: 0px;
+        padding: 0px 0px;
+        margin-bottom: 0px;
+
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+
+        > button {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          text-align: left;
+          background: transparent;
+          padding: 12px 0px;
+
+          .headInfo {
+            display: flex;
+            flex-direction: column;
+
+            h4 {
+              font-size: 20px;
+              line-height: 24px;
+              color: var(--primary);
+              // font-family: Noto-Bold;
+              // margin-bottom: 8px;
+            }
+
+            .duration {
+              font-size: 12px;
+              color: rgba(244, 244, 244, 0.8);
+            }
+          }
+
+          .rotate {
+            // background: #191919;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            margin-left: auto;
+            flex-shrink: 0;
+
+            i {
+              transition: all 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+            }
+
+            .fas fa-caret-down {
+              font-size: 20px;
+              color: var(--primary);
+            }
+          }
+        }
+
+        > .content {
+          margin-top: 0px;
+          border-top: 1px solid rgba(244, 244, 244, 0.5);
+          // padding: 24px 0px;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+            opacity 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+            visibility 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+            margin 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+            padding 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+          opacity: 0;
+          visibility: hidden;
+          pointer-events: none;
+
+          &.show {
+            max-height: 400px;
+            overflow-y: auto;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+            margin-top: 12px;
+            padding: 24px 0px;
+
+            @media screen and (max-width: 903px) {
+              max-height: 700px;
+            }
+          }
+
+          .subHead {
+            // display: flex;
+            // margin-bottom: 13px;
+            // align-items: center;
+            font-size: 16px;
+            line-height: 22px;
+            // font-family: Noto-Bold;
+            color: #333131;
+
+            > div {
+              margin-right: 8px;
+              width: 24px;
+              height: 24px;
+              border-radius: 50%;
+              flex-shrink: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: rgba(93, 85, 255, 0.2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
