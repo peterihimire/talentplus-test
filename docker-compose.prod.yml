@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: talentplus-test-prod
+    image: talentplus-test-prod
+    build:
+      context: .
+      target: production
