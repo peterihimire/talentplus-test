@@ -68,6 +68,14 @@
     }
 
     .first {
+      p {
+        margin-top: 20px;
+        color: var(--white);
+        font-family: Satoshi-Regular, sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+      }
+
       @media (max-width: 1200px) {
         display: flex;
         align-items: center;
@@ -130,6 +138,7 @@
       .social-list {
         display: flex;
         align-items: center;
+        margin-top: 20px;
         .social-link {
           margin-right: 15px;
           color: var(--black);
@@ -195,9 +204,34 @@
     .quick-links-wrapper {
       h3 {
         margin-bottom: 15px;
-        color: var(--txt-light);
-        font-size: 13px;
-        text-transform: uppercase;
+        color: var(--white);
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 39px;
+        text-transform: capitalize;
+
+        // 13 RETINA MAC
+        @media screen and (max-width: 1680px) {
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 39px;
+          text-transform: capitalize;
+        }
+        // WINDOWS
+        @media screen and (max-width: 1366px) {
+          // margin-left: 330px;
+        }
+        // HD
+        @media screen and (max-width: 1280px) {
+          // margin-left: 330px;
+        }
+
+        @media screen and (max-width: 700px) {
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 39px;
+          text-transform: capitalize;
+        }
       }
       .quick-links {
         > li {
@@ -205,19 +239,69 @@
 
           > a {
             color: var(--gray-txt);
-            font-family: NotoSans-Regular, sans-serif;
-            font-size: 14px;
+            font-family: Satoshi-Regular, sans-serif;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 400;
+
+               // 13 RETINA MAC
+            @media screen and (max-width: 1680px) {
+              font-family: Satoshi-Regular, sans-serif;
+              font-size: 20px;
+              line-height: 30px;
+              font-weight: 400;
+            }
+            // WINDOWS
+            @media screen and (max-width: 1366px) {
+              // margin-left: 330px;
+            }
+            // HD
+            @media screen and (max-width: 1280px) {
+              // margin-left: 330px;
+            }
+
+            @media screen and (max-width: 700px) {
+              font-family: Satoshi-Regular, sans-serif;
+              font-size: 18px;
+              line-height: 22px;
+              font-weight: 400;
+            }
           }
         }
       }
     }
 
-    .location-wrapper {
+    .help-wrapper {
       h3 {
         margin-bottom: 15px;
-        color: var(--txt-light);
-        font-size: 13px;
-        text-transform: uppercase;
+        color: var(--white);
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 39px;
+        text-transform: capitalize;
+
+        // 13 RETINA MAC
+        @media screen and (max-width: 1680px) {
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 39px;
+          text-transform: capitalize;
+        }
+        // WINDOWS
+        @media screen and (max-width: 1366px) {
+          // margin-left: 330px;
+        }
+        // HD
+        @media screen and (max-width: 1280px) {
+          // margin-left: 330px;
+        }
+
+        @media screen and (max-width: 700px) {
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 39px;
+          text-transform: capitalize;
+        }
       }
 
       .quick-links {
@@ -226,19 +310,69 @@
 
           > a {
             color: var(--gray-txt);
-            font-family: NotoSans-Regular, sans-serif;
-            font-size: 14px;
+            font-family: Satoshi-Regular, sans-serif;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 400;
+
+            // 13 RETINA MAC
+            @media screen and (max-width: 1680px) {
+              font-family: Satoshi-Regular, sans-serif;
+              font-size: 20px;
+              line-height: 30px;
+              font-weight: 400;
+            }
+            // WINDOWS
+            @media screen and (max-width: 1366px) {
+              // margin-left: 330px;
+            }
+            // HD
+            @media screen and (max-width: 1280px) {
+              // margin-left: 330px;
+            }
+
+            @media screen and (max-width: 700px) {
+              font-family: Satoshi-Regular, sans-serif;
+              font-size: 18px;
+              line-height: 22px;
+              font-weight: 400;
+            }
           }
         }
       }
     }
 
-    .social-wrapper {
+    .subscribe-wrapper {
       h3 {
         margin-bottom: 15px;
-        color: var(--txt-light);
-        font-size: 13px;
-        text-transform: uppercase;
+        color: var(--white);
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 39px;
+        text-transform: capitalize;
+
+        // 13 RETINA MAC
+        @media screen and (max-width: 1680px) {
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 39px;
+          text-transform: capitalize;
+        }
+        // WINDOWS
+        @media screen and (max-width: 1366px) {
+          // margin-left: 330px;
+        }
+        // HD
+        @media screen and (max-width: 1280px) {
+          // margin-left: 330px;
+        }
+
+        @media screen and (max-width: 700px) {
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 39px;
+          text-transform: capitalize;
+        }
       }
 
       .quick-links {
@@ -247,8 +381,33 @@
 
           > a {
             color: var(--gray-txt);
-            font-family: NotoSans-Regular, sans-serif;
-            font-size: 14px;
+            font-family: Satoshi-Regular, sans-serif;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 400;
+
+               // 13 RETINA MAC
+            @media screen and (max-width: 1680px) {
+              font-family: Satoshi-Regular, sans-serif;
+              font-size: 20px;
+              line-height: 30px;
+              font-weight: 400;
+            }
+            // WINDOWS
+            @media screen and (max-width: 1366px) {
+              // margin-left: 330px;
+            }
+            // HD
+            @media screen and (max-width: 1280px) {
+              // margin-left: 330px;
+            }
+
+            @media screen and (max-width: 700px) {
+              font-family: Satoshi-Regular, sans-serif;
+              font-size: 18px;
+              line-height: 22px;
+              font-weight: 400;
+            }
           }
         }
       }

@@ -4,6 +4,8 @@ import React, { useCallback } from "react";
 // import heroImg2 from "../../../../assets/images/product8.png";
 import { Link } from "react-router-dom";
 import guyHeadset from "../../../../assets/images/guy-on-headset.png";
+import { ReactComponent as PreviewStacksIcon } from "../../../../assets/images/preview-stacks-two.svg";
+import { ReactComponent as VolumeIcon } from "../../../../assets/images/volume-up.svg";
 
 import "./styles.scss";
 
@@ -26,18 +28,36 @@ const HighQuality = () => {
             </p>
 
             <div className={`get-started`}>
-              <button className="btn-primary  btn-medium ">Enroll Now</button>
+              <button className="btn-primary  btn-medium ">View courses</button>
             </div>
 
-            <div className={`get-started`}>
-              <div className={`reason-item`}>ONE</div>
-              <div className={`reason-item`}>TWO</div>
-              <div className={`reason-item`}>THREE</div>
-              <div className={`reason-item`}>FOUR</div>
+            <div className={`reasons-wrapper`}>
+              <div className={`top`}>
+                <div className={`reason-item`}>
+                  <VolumeIcon className={`reason-icon`} />{" "}
+                  <span>Audio classes</span>
+                </div>
+                <div className={`reason-item`}>
+                  <VolumeIcon className={`reason-icon`} />{" "}
+                  <span>Live classes</span>
+                </div>
+              </div>
+
+              <div className={`bottom`}>
+                <div className={`reason-item`}>
+                  <VolumeIcon className={`reason-icon`} />{" "}
+                  <span>Recorded classes</span>
+                </div>
+                <div className={`reason-item`}>
+                  <VolumeIcon className={`reason-icon`} />{" "}
+                  <span>50+ notes</span>
+                </div>
+              </div>
             </div>
           </div>
           <div className={`rightt`}>
             <img src={guyHeadset} alt="" />
+            <PreviewStacksIcon className={`preview-stack`} />
           </div>
         </div>
       </div>

@@ -26,8 +26,9 @@
 
   .image-div {
     img {
-      // height: 270px;
+      height: 270px;
       width: 100%;
+      border-radius: var(--radius-four);
       // position: absolute;
       // text-align: center;
       // top: 50%;

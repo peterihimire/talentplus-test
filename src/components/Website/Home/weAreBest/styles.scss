@@ -167,7 +167,7 @@
       }
 
       .img-wrapper {
-        width: 95%;
+        width: 90%;
 
         img {
           width: 100%;
@@ -199,9 +199,31 @@
       // padding-top: 50px;
 
       .reason-item {
-        height: 100%;
+        // height: 100%;
+        height: fit-content;
         width: 270px;
         background-color: var(--white);
+        padding: 20px;
+
+        .reason-icon{
+          width: 35px;
+        }
+
+        .for-head {
+          // font-family: Satoshi-Bold sans-serif !important;
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 700;
+          margin: 5px 0px;
+          color: var(--black);
+        }
+
+        p {
+          font-size: 12px;
+          line-height: 28px;
+          color: #a2a2a2;
+          font-weight: 500;
+        }
       }
 
       @media screen and (max-width: 1200px) {

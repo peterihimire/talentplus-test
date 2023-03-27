@@ -61,6 +61,11 @@
       color: var(--white);
       position: relative;
 
+      .curl-arrow {
+        position: absolute;
+        top: 470px;
+        right: -50px;
+      }
       h1 {
         font-style: normal;
         line-height: 82px;
@@ -84,8 +89,8 @@
           // margin-left: 250px;
           font-size: 55px;
           font-style: normal;
-          line-height: 72px;
-          font-weight: 700;
+          line-height: 65px;
+          font-weight: 70;
         }
         // WINDOWS
         @media screen and (max-width: 1366px) {
@@ -163,15 +168,22 @@
       }
 
       .get-started {
-        margin-top: 30px;
+        margin: 30px 0px;
         display: flex;
         align-items: center;
 
         button {
           margin-right: 20px;
+          display: flex;
+          // align-items: center;
 
           &:last-of-type {
             margin-right: 0px;
+          }
+
+          span{
+            margin-left: 10px;
+            margin-top: 5px;
           }
         }
       }

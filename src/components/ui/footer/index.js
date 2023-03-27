@@ -18,11 +18,13 @@ const Footer = () => {
         <div className={`first`}>
           <div className={`logo`}>
             <Link to="/">
-              {/* BRID<span>GET</span> */}
               <img src={logo} alt="" />
             </Link>
           </div>
-          <p>reach out to us on any of our social media networks</p>
+          <p>
+            Reach out to us on any of our social
+            <br /> media networks
+          </p>
           <div className={`social-list`}>
             <a
               href="https://www.facebook.com"
@@ -30,9 +32,7 @@ const Footer = () => {
               rel="noreferrer"
               className="social-link"
             >
-              <Facebook width="17px" />
-              {/* <FontAwesomeIcon icon={faCoffee} /> */}
-              {/* <FontAwesomeIcon icon={faSquareInstagram} /> */}
+              <Facebook width="37px" />
             </a>
             <a
               href="https://www.linkedin.com"
@@ -40,8 +40,7 @@ const Footer = () => {
               rel="noreferrer"
               className="social-link"
             >
-              <Youtube width="17px" />
-              {/* <FontAwesomeIcon icon={faFacebookSquare} /> */}
+              <Youtube width="37px" />
             </a>
             <a
               href="https://twitter.com"
@@ -49,8 +48,7 @@ const Footer = () => {
               rel="noreferrer"
               className="social-link"
             >
-              {/* <FontAwesomeIcon icon={faTwitterSquare} /> */}
-              <Twitter width="17px" />
+              <Twitter width="37px" />
             </a>
             <a
               href="https://www.instagram.com/"
@@ -58,8 +56,7 @@ const Footer = () => {
               rel="noreferrer"
               className="social-link"
             >
-              <Instagram width="17px" />
-              {/* <FontAwesomeIcon icon={faLinkedin} /> */}
+              <Instagram width="37px" />
             </a>
             <a
               href="https://www.instagram.com/"
@@ -67,30 +64,9 @@ const Footer = () => {
               rel="noreferrer"
               className="social-link"
             >
-              <Discord width="17px" />
-              {/* <FontAwesomeIcon icon={faLinkedin} /> */}
+              <Discord width="37px" />
             </a>
           </div>
-
-          {/* <div className={`newsletter`}>
-            <p>
-              Subscribe to our weekly newsletter, by entering your email below.
-            </p>
-            <form className={`form`}>
-              <div className={`formGroup`}>
-                <Input
-                  type="email"
-                  id="email"
-                  // required
-                  name="email"
-                  placeholder="Enter your email..."
-                  src="/images/send-icon.svg"
-                  alt=""
-                  loading="lazy"
-                />
-              </div>
-            </form>
-          </div> */}
         </div>
         <div className={`second`}>
           <div className={`quick-links-wrapper`}>
@@ -114,7 +90,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className={`location-wrapper`}>
+          <div className={`help-wrapper`}>
             <h3>Community</h3>
             <ul className={`quick-links`}>
               <li>
@@ -135,7 +111,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className={`location-wrapper`}>
+          <div className={`subscribe-wrapper`}>
             <h3>Subscribe Us</h3>
 
             <form className={`form`}>
@@ -152,34 +128,9 @@ const Footer = () => {
                 />
               </div>
             </form>
-
-            {/* <ul className={`quick-links`}>
-              <li>
-                <Link to="/products-services">Help Center</Link>
-              </li>
-              <li>
-                <Link to="/our-process">Site Map</Link>
-              </li>
-              <li>
-                <Link to="/contact-us">IP Whitelist</Link>
-              </li>
-            </ul> */}
           </div>
         </div>
       </div>
-      {/* <div className={`outro wrapper`}>
-        <div className="copyright">
-          <p>Copyright © 2023 — TechTime Limited. All Rights Reserved.</p>
-        </div>
-        <div className={`policy-terms`}>
-          <div className="policy">
-            <Link to="/privacy-policy">— Privacy Policy</Link>
-          </div>
-          <div className="terms">
-            <Link to="/terms-and-conditions">— Terms of Use</Link>
-          </div>
-        </div>
-      </div> */}
     </footer>
   );
 };
