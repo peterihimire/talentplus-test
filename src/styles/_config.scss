@@ -1,18 +1,4 @@
 @font-face {
-  font-family: Lato-Regular;
-  src: url("../assets/fonts/lato/Lato-Regular.ttf");
-}
-
-@font-face {
-  font-family: Lato-Light;
-  src: url("../assets/fonts/lato/Lato-Light.ttf");
-}
-@font-face {
-  font-family: NotoSans-Light;
-  src: url("../assets/fonts/noto/NotoSans-Light.ttf");
-}
-
-@font-face {
   font-family: Satoshi-Regular;
   src: url("../assets/fonts/satoshi/Satoshi-Regular.otf");
 }
@@ -20,15 +6,6 @@
 @font-face {
   font-family: Satoshi-Bold;
   src: url("../assets/fonts/satoshi/Satoshi-Bold.otf");
-}
-
-@font-face {
-  font-family: NotoSans-Medium;
-  src: url("../assets/fonts/noto/NotoSans-Medium.ttf");
-}
-@font-face {
-  font-family: NotoSans-Bold;
-  src: url("../assets/fonts/noto/NotoSans-Bold.ttf");
 }
 
 @font-face {
@@ -47,7 +24,7 @@
 html {
   -webkit-text-size-adjust: var(--full);
   scroll-behavior: smooth;
-  font-family: NotoSans-Regular;
+  font-family: Satoshi-Regular;
 }
 
 body {

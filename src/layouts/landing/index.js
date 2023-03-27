@@ -7,7 +7,7 @@ import { Outlet } from "react-router-dom";
 
 import "./styles.scss";
 
-const WebsiteLayout = () => {
+const LandingLayout = () => {
   const router = useLocation();
   const [open, setOpen] = useState(false);
 
@@ -47,4 +47,4 @@ const WebsiteLayout = () => {
   );
 };
 
-export default WebsiteLayout;
+export default LandingLayout;
