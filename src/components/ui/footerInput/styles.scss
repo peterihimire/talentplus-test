@@ -3,22 +3,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  // position: relative;
   width: 100% !important;
 
   .icon-wrapper {
-    position: absolute;
+    // position: absolute;
     right: 0px;
-    bottom: 1.0px;
+    bottom: 1px;
     font-size: 14px;
-    padding: 13.7px 10px;
+    // padding: 13.7px 10px;
     background: var(--main-color);
     border-radius: 0 2px 2px 0px;
     // border-radius: var(--radius-two);
     color: var(--white);
+    width: 192px;
+    height: 46px !important;
   }
 
   input {
-    padding: 12px 118px 12px 18px !important;
+    padding: 12px;
+    border-radius: 2px 0px 0px 2px;
   }
 }

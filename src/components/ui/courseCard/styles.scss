@@ -24,14 +24,24 @@
     }
   }
   h5 {
-    font-size: 24px;
+    // font-size: 24px;
+    font-size: var(--font-min-one);
     line-height: 30px;
     font-weight: 600;
     text-transform: capitalize;
     margin-top: 10px;
 
+    @media screen and (max-width: 1680px) {
+      // margin-left: 250px;
+      // font-size: 46px;
+      font-size: var(--font-min-one);
+      font-style: normal;
+      // line-height: 60px;
+      font-weight: 700;
+    }
+
     @media (max-width: 600px) {
-      font-size: 10px;
+      font-size: var(--font-min-two);
       line-height: 12px;
       font-weight: 600;
       text-transform: capitalize;
@@ -63,12 +73,17 @@
     }
 
     .star-review {
+      color: var(--gray-color);
       p {
         @media (max-width: 600px) {
           font-size: 6px;
           line-height: 5px;
           font-weight: 700;
           text-transform: capitalize;
+
+          span {
+            margin-left: 10px;
+          }
         }
       }
     }
@@ -79,6 +94,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
+    color: var(--gray-color);
 
     @media (max-width: 600px) {
       font-size: 8px;
@@ -90,6 +106,10 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      span {
+        margin-left: 5px;
+      }
     }
   }
 
@@ -99,15 +119,28 @@
     justify-content: space-between;
     margin-top: 10px;
 
+    h6 {
+      font-size: 20px;
+      color: var(--main-color);
+
+      @media (max-width: 600px) {
+        font-size: 10px;
+      }
+    }
+
     .instructor-wrapper {
       display: flex;
       align-items: center;
 
       span {
+        margin-left: 10px;
+        font-size: var(--font-txt-one);
+        font-weight: 900;
+
         @media (max-width: 600px) {
-          font-size: 10px;
+          font-size: var(--font-txt-three);
           line-height: 11px;
-          font-weight: 700;
+          font-weight: 900;
           text-transform: capitalize;
         }
       }

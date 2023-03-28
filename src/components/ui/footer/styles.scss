@@ -9,6 +9,10 @@
     padding: 150px 0 250px;
   }
 
+  @media (max-width: 703px) {
+    padding: 50px 0 150px;
+  }
+
   .wrapper {
     // width: 67%;
     width: 80%;
@@ -102,22 +106,10 @@
         height: fit-content;
 
         img {
-          // width: 45px;
-          // height: 45px;
+          @media (max-width: 700px) {
+            width: 90px;
+          }
         }
-        // > a {
-        //   width: 102px;
-        //   background: linear-gradient(to right, #ef8a25, #c833af);
-        //   -webkit-background-clip: text;
-        //   -webkit-text-fill-color: transparent;
-        //   font-size: 28px;
-        //   font-weight: 300;
-
-        //   span {
-        //     font-size: 28px !important;
-        //     font-weight: 900;
-        //   }
-        // }
       }
 
       .social-list {
@@ -180,12 +172,11 @@
 
     @media (max-width: 700px) {
       grid-template-columns: repeat(1, 1fr);
-
       width: var(--full);
       gap: 26px;
       // text-align: center;
     }
-    .quick-links-wrapper {
+    .links-wrapper {
       h3 {
         margin-bottom: 15px;
         color: var(--white);
@@ -228,70 +219,16 @@
             }
 
             @media screen and (max-width: 700px) {
-              font-family: Satoshi-Regular, sans-serif;
-              font-size: 18px;
+              font-family: Satoshi-Regular;
+              font-size: 16px;
               line-height: 22px;
-              font-weight: 400;
+              font-weight: 500;
             }
           }
         }
       }
     }
 
-    .help-wrapper {
-      h3 {
-        margin-bottom: 15px;
-        color: var(--white);
-        font-size: 32px;
-        font-weight: 600;
-        line-height: 39px;
-        text-transform: capitalize;
-
-        // 13 RETINA MAC
-        @media screen and (max-width: 1680px) {
-          font-size: 28px;
-          font-weight: 600;
-          line-height: 39px;
-          text-transform: capitalize;
-        }
-
-        @media screen and (max-width: 700px) {
-          font-size: 22px;
-          font-weight: 600;
-          line-height: 39px;
-          text-transform: capitalize;
-        }
-      }
-
-      .quick-links {
-        > li {
-          margin-bottom: 10px;
-
-          > a {
-            color: var(--gray-txt);
-            font-family: Satoshi-Regular, sans-serif;
-            font-size: 24px;
-            line-height: 32px;
-            font-weight: 400;
-
-            // 13 RETINA MAC
-            @media screen and (max-width: 1680px) {
-              font-family: Satoshi-Regular, sans-serif;
-              font-size: 20px;
-              line-height: 30px;
-              font-weight: 400;
-            }
-
-            @media screen and (max-width: 700px) {
-              font-family: Satoshi-Regular, sans-serif;
-              font-size: 18px;
-              line-height: 22px;
-              font-weight: 400;
-            }
-          }
-        }
-      }
-    }
 
     .subscribe-wrapper {
       h3 {
@@ -318,34 +255,34 @@
         }
       }
 
-      .quick-links {
-        > li {
-          margin-bottom: 10px;
+      // .quick-links {
+      //   > li {
+      //     margin-bottom: 10px;
 
-          > a {
-            color: var(--gray-txt);
-            font-family: Satoshi-Regular, sans-serif;
-            font-size: 24px;
-            line-height: 32px;
-            font-weight: 400;
+      //     > a {
+      //       color: var(--gray-txt);
+      //       font-family: Satoshi-Regular, sans-serif;
+      //       font-size: 24px;
+      //       line-height: 32px;
+      //       font-weight: 400;
 
-            // 13 RETINA MAC
-            @media screen and (max-width: 1680px) {
-              font-family: Satoshi-Regular, sans-serif;
-              font-size: 20px;
-              line-height: 30px;
-              font-weight: 400;
-            }
+      //       // 13 RETINA MAC
+      //       @media screen and (max-width: 1680px) {
+      //         font-family: Satoshi-Regular, sans-serif;
+      //         font-size: 20px;
+      //         line-height: 30px;
+      //         font-weight: 400;
+      //       }
 
-            @media screen and (max-width: 700px) {
-              font-family: Satoshi-Regular, sans-serif;
-              font-size: 18px;
-              line-height: 22px;
-              font-weight: 400;
-            }
-          }
-        }
-      }
+      //       @media screen and (max-width: 700px) {
+      //         font-family: Satoshi-Regular, sans-serif;
+      //         font-size: 18px;
+      //         line-height: 22px;
+      //         font-weight: 400;
+      //       }
+      //     }
+      //   }
+      // }
     }
   }
 }

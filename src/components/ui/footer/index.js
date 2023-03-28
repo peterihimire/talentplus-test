@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={`second`}>
-          <div className={`quick-links-wrapper`}>
+          <div className={`links-wrapper`}>
             <h3>Useful Links</h3>
             <ul className={`quick-links`}>
               <li>
@@ -90,7 +90,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className={`help-wrapper`}>
+          <div className={`links-wrapper`}>
             <h3>Community</h3>
             <ul className={`quick-links`}>
               <li>

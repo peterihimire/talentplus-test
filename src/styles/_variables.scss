@@ -1,17 +1,18 @@
 :root {
   --main-color: #004db3;
-  --blue-grey: #CCDBF0;;
+  --blue-grey: #ccdbf0;
   --blue: #1e5dce;
   --blue-light: rgba(30, 93, 206, 0.2);
 
-  --gray-bg: #f4f7fc;
-  --gray-color: #a1a1a1;
-
-  --form-control-color: #2568ef;
-  --form-control-disabled: #959495;
   --white: #fff;
   --dark: #000f24;
   --black: #000000;
+  --gray-bg: #f4f7fc;
+  --gray-color: #a1a1a1;
+  --gray: #a2a2a2;
+
+  --form-control-color: #004db3;
+  --form-control-disabled: #959495;
 
   --full: 100%;
   --radius-two: 2px;
@@ -19,6 +20,22 @@
   --radius-eight: 8px;
   --radius-sixteen: 16px;
   --radius-twenty-four: 24px;
+
+  --font-max-one: 64px;
+  --font-max-two: 55px;
+  --font-max-three: 32px;
+
+  --font-medium-one: 56px;
+  --font-medium-two: 46px;
+  --font-medium-three: 24px;
+
+  --font-min-one: 24px;
+  --font-min-two: 12px;
+  --font-min-three: 8px;
+
+  --font-txt-one: 16px;
+  --font-txt-two: 12px;
+  --font-txt-three: 8px;
 
   --tran: #ffffff00;
   --box-shadow: 0px 15px 26px rgba(1, 73, 159, 0.05);

@@ -36,7 +36,7 @@ const Testimonials = () => {
           <Swiper
             breakpoints={{
               200: { slidesPerView: 1 },
-              500: { slidesPerView: 1 },
+              500: { slidesPerView: 1.5 },
               700: { slidesPerView: 2 },
               900: { slidesPerView: 3 },
               1200: { slidesPerView: 3 },

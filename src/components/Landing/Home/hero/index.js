@@ -4,7 +4,6 @@ import { ReactComponent as ArrowUpIcon } from "../../../../assets/images/arrow-o
 import { ReactComponent as ArrowCurlIcon } from "../../../../assets/images/curl-arrow-down.svg";
 import { ReactComponent as PreviewStacksIcon } from "../../../../assets/images/people-stacks-num.svg";
 
-
 import "./styles.scss";
 
 const WhyAreBest = () => {
@@ -12,7 +11,7 @@ const WhyAreBest = () => {
     <section className={`hero-header`}>
       <div className="wrapper">
         <div className={`container`}>
-          <div className={`left`}>
+          <div className={`leftt`}>
             <h1>
               Grow your skills to <br />
               advance your career <br />
@@ -31,10 +30,10 @@ const WhyAreBest = () => {
                   <ArrowUpIcon />
                 </span>
               </button>
-              <button className="btn-white  btn-medium">Enroll Now</button>
+              <button className="btn-white  btn-medium ">Enroll Now</button>
             </div>
 
-            <PreviewStacksIcon />
+            <PreviewStacksIcon className={`preview-stacks`} />
 
             <ArrowCurlIcon className={`curl-arrow`} />
           </div>
