@@ -7,12 +7,16 @@
     width: var(--full);
     height: 50px;
 
+    @media screen and (max-width: 700px) {
+      height: 36px;
+    }
+
     .tabsHeaderList {
       display: flex;
       height: var(--full);
       border-bottom: 1px solid var(--card-border);
-      overflow-x: auto;
-      overflow-y: hidden;
+      // overflow-x: auto;
+      // overflow-y: hidden;
       white-space: nowrap;
       justify-content: center;
 
@@ -39,6 +43,11 @@
         // border: solid #fff 2px;
         font-weight: bold;
         margin: 0 10px;
+
+        @media screen and (max-width: 700px) {
+          height: 26px;
+          width: 80px;
+        }
 
         &.active {
           background: #fff;
@@ -85,6 +94,12 @@
           font-size: 14px;
           position: relative;
           font-family: Satoshi-Regular !important;
+
+          @media screen and (max-width: 700px) {
+            height: 26px;
+            width: 80px;
+            font-size: 8px;
+          }
 
           > .dot {
             display: none;

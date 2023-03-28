@@ -21,9 +21,7 @@
       font-size: 56px;
       line-height: 70px;
       font-weight: 700;
-      // color: var(--white);
 
-      // 13 RETINA MAC
       @media screen and (max-width: 1680px) {
         // margin-left: 250px;
         font-size: 46px;
@@ -31,19 +29,11 @@
         line-height: 60px;
         font-weight: 700;
       }
-      // WINDOWS
-      @media screen and (max-width: 1366px) {
-        // margin-left: 330px;
-      }
-      // HD
-      @media screen and (max-width: 1280px) {
-        // margin-left: 330px;
-      }
 
       @media screen and (max-width: 700px) {
-        font-size: 40px;
+        font-size: 24px;
         font-style: normal;
-        line-height: 50px;
+        line-height: 36px;
         font-weight: 700;
       }
     }

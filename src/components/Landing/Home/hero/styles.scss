@@ -2,8 +2,6 @@
   width: 100%;
   padding: 50px 0 0px 0;
   position: relative;
-  // background: url(../../../../assets/images/css-bg.png);
-  // background-color: var(--gray-bg);
   background-color: var(--main-color);
 
   @keyframes bounce {
@@ -29,12 +27,6 @@
   @media screen and (max-width: 600px) {
     height: auto;
     padding: 100px 0px 0px;
-  }
-
-  .indicator {
-    animation: bounce;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
   }
 
   .container {
@@ -69,22 +61,13 @@
       h1 {
         font-style: normal;
         line-height: 82px;
-        // max-width: 700px;
         font-weight: 700;
         font-size: 64px;
-        // letter-spacing: 1px;
+      
         margin-bottom: 30px;
         margin-top: -5px;
 
-        // 2.5K
-        @media (max-width: 2560px) {
-          // margin-left: 550px;
-        }
-        // FULL HD
-        @media (max-width: 1920px) {
-          // margin-left: 330px;
-        }
-        // 13 RETINA MAC
+
         @media screen and (max-width: 1680px) {
           // margin-left: 250px;
           font-size: 55px;
@@ -92,53 +75,13 @@
           line-height: 65px;
           font-weight: 70;
         }
-        // WINDOWS
-        @media screen and (max-width: 1366px) {
-          // margin-left: 330px;
-        }
-        // HD
-        @media screen and (max-width: 1280px) {
-          // margin-left: 330px;
-        }
 
         @media screen and (max-width: 700px) {
-          font-size: 40px;
+          font-size: 32px;
           font-style: normal;
           line-height: 50px;
           font-weight: 700;
         }
-        // @media (max-width: 1387px) {
-        //   font-size: 60px;
-        //   font-style: normal;
-        //   line-height: 72px;
-        //   max-width: 600px;
-        //   letter-spacing: 1px;
-        //   font-weight: 700;
-        // }
-
-        // @media screen and (max-width: 1200px) {
-        //   max-width: 750px;
-        //   font-size: 60px;
-        //   font-style: normal;
-        //   line-height: 72px;
-        //   font-weight: 700;
-        // }
-
-        // @media screen and (max-width: 900px) {
-        //   max-width: 650px;
-        //   font-size: 60px;
-        //   font-style: normal;
-        //   line-height: 62px;
-        //   font-weight: 700;
-        // }
-
-        // @media screen and (max-width: 700px) {
-        //   max-width: 320px;
-        //   font-size: 40px;
-        //   font-style: normal;
-        //   line-height: 50px;
-        //   font-weight: 700;
-        // }
       }
 
       p {
@@ -149,7 +92,6 @@
         line-height: 26px;
         text-transform: capitalize;
         color: var(--white);
-        // letter-spacing: 1px;
         margin: 20px 0 40px 0;
         // opacity: 0.7;
       }
@@ -181,7 +123,7 @@
             margin-right: 0px;
           }
 
-          span{
+          span {
             margin-left: 10px;
             margin-top: 5px;
           }
@@ -208,12 +150,12 @@
 
         @media screen and (max-width: 1200px) {
           max-height: 400px;
-          display: none;
+          // display: none;
         }
 
         @media screen and (max-width: 900px) {
           max-height: 400px;
-          display: none;
+          // display: none;
         }
       }
     }

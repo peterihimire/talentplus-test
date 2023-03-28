@@ -27,43 +27,41 @@ const CourseCard = ({
   // }, []);
 
   return (
-    <div>
-      <div data-aos="zoom-in" className={`course-card`} key={id}>
-        <div className={`image-div`}>
-          <img src={image} alt="" />
+    <div data-aos="zoom-in" className={`course-card`} key={id}>
+      <div className={`image-div`}>
+        <img src={image} alt="" />
+      </div>
+
+      <div className={`cat-star`}>
+        <div className={`category-div`}>
+          <p>{category}</p>
         </div>
 
-        <div className={`cat-star`}>
-          <div className={`category-div`}>
-            <p>{category}</p>
-          </div>
+        <div className={`star-review`}>
+          <p>
+            {star} <StarIcon />
+            <span>{`(${reviews}k+)`}</span>
+          </p>
+        </div>
+      </div>
+      <h5>{title}</h5>
+      <div className={`time-lesson`}>
+        <div className={`icon-span`}>
+          <TimeIcon />
+          <span>{time}</span>
+        </div>
 
-          <div>
-            <p>
-              {star} <StarIcon />
-              <span>{`(${reviews}k+)`}</span>
-            </p>
-          </div>
+        <div className={`icon-span`}>
+          <BookIcon />
+          <span>{lessons} Lessons</span>
         </div>
-        <h5>{title}</h5>
-        <div className={`time-lesson`}>
-          <div className={`icon-span`}>
-            <TimeIcon />
-            <span>{time}</span>
-          </div>
-
-          <div className={`icon-span`}>
-            <BookIcon />
-            <span>{lessons} Lessons</span>
-          </div>
+      </div>
+      <div className={`instructor-price`}>
+        <div className={`instructor-wrapper`}>
+          <img src={pix} alt="" />
+          <span>{instructor}</span>
         </div>
-        <div className={`instructor-price`}>
-          <div className={`instructor-wrapper`}>
-            <img src={pix} alt="" width="40px" height="40px" />
-            <span>{instructor}</span>
-          </div>
-          <h6>${price}.00</h6>
-        </div>
+        <h6>${price}.00</h6>
       </div>
     </div>
   );

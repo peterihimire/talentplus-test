@@ -21,19 +21,19 @@ const OurClients = () => {
       <div className="wrapper">
         <div className={`companies-wrapper`}>
           <div className={`company-item`}>
-            <Zoom width="170px" />
+            <Zoom className={`icon-width`}  />
           </div>
           <div className={`company-item`}>
-            <Monday width="170px" />
+            <Monday className={`icon-width`}  />
           </div>
           <div className={`company-item`}>
-            <Stripe width="170px" />
+            <Stripe className={`icon-width`}  />
           </div>
           <div className={`company-item`}>
-            <Zoom width="170px" />
+            <Zoom className={`icon-width`}  />
           </div>
           <div className={`company-item`}>
-            <Zoom width="170px" />
+            <Zoom className={`icon-width`}  />
           </div>
         </div>
       </div>
