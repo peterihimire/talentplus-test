@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React from "react";
 import heroImg from "../../../../assets/images/hero-img.png";
 import { ReactComponent as ArrowUpIcon } from "../../../../assets/images/arrow-outward.svg";
 import { ReactComponent as ArrowCurlIcon } from "../../../../assets/images/curl-arrow-down.svg";

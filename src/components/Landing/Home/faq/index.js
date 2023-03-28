@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import Accordion from "../../../ui/accordion";
 import { ReactComponent as Plus } from "../../../../assets/images/plus.svg";
 import { ReactComponent as Minus } from "../../../../assets/images/minus.svg";
 

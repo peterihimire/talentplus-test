@@ -1,21 +1,9 @@
-import React, { useState } from "react";
-// import Accordion from "../../../ui/accordion";
-import { ReactComponent as Plus } from "../../../../assets/images/plus.svg";
-import { ReactComponent as Minus } from "../../../../assets/images/minus.svg";
+import React from "react";
 import readyConnect from "../../../../assets/images/ready-connect.svg";
 
 import "./styles.scss";
 
 const JoinCommunity = () => {
-  const [clicked, setClicked] = useState(0);
-
-  const toggler = (index) => {
-    if (clicked === index) {
-      setClicked(null);
-    } else {
-      setClicked(index);
-    }
-  };
   return (
     <section className={`join-community`}>
       <div className="wrapper">

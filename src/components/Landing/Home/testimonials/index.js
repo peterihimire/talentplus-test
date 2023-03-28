@@ -19,10 +19,10 @@ const Testimonials = () => {
     },
   };
   return (
-    <section className={`home-brands`}>
+    <section className={`testimonial`}>
       <div className="">
         <div className="wrapper">
-          <div className={`featured-head`}>
+          <div className={`testimonial-head`}>
             <h3>What our clients are saying</h3>
             <p>
               High-defination video is video of higher resolution and quality
@@ -32,7 +32,7 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <div className={`cat-carousel`}>
+        <div className={`testimonial-carousel`}>
           <Swiper
             breakpoints={{
               200: { slidesPerView: 1 },

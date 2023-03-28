@@ -1,5 +1,4 @@
-import React, { useCallback } from "react";
-
+import React from "react";
 import boyWatching from "../../../../assets/images/boy-watching.png";
 import { ReactComponent as DollarIcon } from "../../../../assets/images/dollar-orange.svg";
 

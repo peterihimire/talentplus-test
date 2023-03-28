@@ -9,8 +9,6 @@ import JoinCommunity from "./joinCommunity";
 import WeAreBest from "./weAreBest";
 import { Helmet } from "react-helmet";
 
-import "./styles.scss";
-
 const HomePage = () => {
   return (
     <div className={`homepage`}>

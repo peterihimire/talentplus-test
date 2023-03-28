@@ -16,31 +16,31 @@ This is Talent-plus test project, bootstrapped with create-react-app and docker.
 
 Project is created with:
 
-- Node version: 18.0
-- Express version: 4.18.2
-- Bcryptjs version: 2.4.3
-- Pg version: 8.10.0
-- Pg-hstore version: 2.3.4
-- Sequelize version: 6.29.2
-- PostgreSQL version: 15.0
+- Node version: node:19.6.0-alpine
+- React version: 4.18.2
+- React-Router-DOM version: 2.4.3
+- Swiper version: 8.10.0
+- React-Helmet version: 2.3.4
+- Hamburgers version: 6.29.2
+- Docker
+- Nginx
 
 ## Setup
 
 To run this project, install it locally using npm:
 
 ```
-$ git clone https://github.com/thecodec/recallo_lite_bkend
-$ cd recallo_lite_bkend
-$ touch .env
-$ add "JWT_KEY=evilsecret123@" to the .env file
-$ npm install
-$ npm run dev
+$ git clone https://github.com/peterihimire/talentplus-test.git
+$ cd talentplus-test
+$ docker-compose -f docker-compose.prod.yml build
+$ docker run -p 80:80 --name talentplus-app talentplus-test-prod
+
 ```
 
 ## Sources
 
-This app was inspired by Recallo CC”
-thats it [@recallo](https://)
+This app was inspired by TechTime”
+thats it [@techtime](https://)
 
 ## Demo
 

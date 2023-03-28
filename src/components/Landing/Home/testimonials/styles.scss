@@ -1,34 +1,21 @@
-.home-brands {
+.testimonial {
   padding: 100px 0;
   background-color: var(--gray-bg);
 
-  .featured-head {
-    // display: flex;
+  .testimonial-head {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     text-align: center;
     max-width: 750px;
 
-    h6 {
-      color: var(--main-color);
-      text-transform: uppercase;
-      margin-bottom: 20px;
-      font-size: 15px;
-    }
-
     h3 {
-      // font-size: 56px;
       font-size: var(--font-medium-one);
       line-height: 70px;
       font-weight: 700;
       margin-bottom: 30px;
-      // color: var(--white);
 
-      // 13 RETINA MAC
       @media screen and (max-width: 1680px) {
-        // margin-left: 250px;
-        // font-size: 46px;
         font-size: var(--font-medium-two);
         font-style: normal;
         line-height: 60px;
@@ -36,7 +23,6 @@
       }
 
       @media screen and (max-width: 700px) {
-        // font-size: 24px;
         font-size: var(--font-medium-three);
         font-style: normal;
         line-height: 36px;
@@ -45,17 +31,13 @@
     }
 
     p {
-      // max-width: 500px;
       font-style: normal;
       font-weight: 500;
-      // font-size: 16px;
       font-size: var(--font-txt-one);
       line-height: 26px;
       text-transform: capitalize;
       color: var(--gray-color);
       margin-bottom: 30px;
-      // margin: 20px 0 40px 0;
-      // opacity: 0.7;
 
       @media screen and (max-width: 700px) {
         font-size: var(--font-txt-two);
@@ -71,13 +53,12 @@
     }
   }
 
-  .cat-carousel {
+  .testimonial-carousel {
     margin-top: 40px;
 
     .testimony-item {
       flex-basis: 30.3333%;
       flex-grow: 1;
-      // position: relative;
       height: 300px;
       background: #ffffff;
       border-radius: var(--radius-twenty-four);
@@ -211,9 +192,3 @@
     }
   }
 }
-
-//7060937125
-//0243698367
-//3020171781
-//yinka
-//firstbank

@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import CustomTab from "../../../ui/customTab";
 import CourseCard from "../../../ui/courseCard";
-import product1 from "../../../../assets/images/intro-marketing.png";
+import course3 from "../../../../assets/images/intro-marketing.png";
+import course1 from "../../../../assets/images/intro-new-marketing.png";
+import course2 from "../../../../assets/images/intro-user-research.png";
 import pix from "../../../../assets/images/client-1.png";
 
 import "./styles.scss";
@@ -24,7 +26,7 @@ const BrowseCourses = () => {
       lessons: 5,
       star: 4.7,
       reviews: 2.5,
-      image: product1,
+      image: course1,
       pix: pix,
     },
     {
@@ -37,7 +39,7 @@ const BrowseCourses = () => {
       lessons: 5,
       star: 4.7,
       reviews: 2.5,
-      image: product1,
+      image: course2,
       pix: pix,
     },
     {
@@ -50,7 +52,7 @@ const BrowseCourses = () => {
       lessons: 5,
       star: 4.7,
       reviews: 2.5,
-      image: product1,
+      image: course3,
       pix: pix,
     },
     {
@@ -63,7 +65,7 @@ const BrowseCourses = () => {
       lessons: 5,
       star: 4.7,
       reviews: 2.5,
-      image: product1,
+      image: course2,
       pix: pix,
     },
     {
@@ -76,7 +78,7 @@ const BrowseCourses = () => {
       lessons: 5,
       star: 4.7,
       reviews: 2.5,
-      image: product1,
+      image: course1,
       pix: pix,
     },
     {
@@ -89,7 +91,7 @@ const BrowseCourses = () => {
       lessons: 5,
       star: 4.7,
       reviews: 2.5,
-      image: product1,
+      image: course3,
       pix: pix,
     },
   ];
@@ -224,7 +226,7 @@ const BrowseCourses = () => {
           </div>
           <div className={`btn-wrapper`}>
             <button className={`btn-primary btn-large`}>
-             Explore all courses
+              Explore all courses
             </button>
           </div>
         </div>
