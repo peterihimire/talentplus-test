@@ -1,7 +1,4 @@
-import React, { useEffect } from "react";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-
+import React from "react";
 import { ReactComponent as TimeIcon } from "../../../assets/images/schedule.svg";
 import { ReactComponent as BookIcon } from "../../../assets/images/menu_book.svg";
 import { ReactComponent as StarIcon } from "../../../assets/images/star.svg";
@@ -21,11 +18,6 @@ const CourseCard = ({
   time,
   pix,
 }) => {
-  // useEffect(() => {
-  //   AOS.init({ duration: 2000 });
-  //   AOS.refresh();
-  // }, []);
-
   return (
     <div data-aos="zoom-in" className={`course-card`} key={id}>
       <div className={`image-div`}>
@@ -39,7 +31,7 @@ const CourseCard = ({
 
         <div className={`star-review`}>
           <p>
-            {star} <StarIcon />
+            {star} <StarIcon className={`main-icon`} />
             <span>{`(${reviews}k+)`}</span>
           </p>
         </div>
@@ -47,12 +39,12 @@ const CourseCard = ({
       <h5>{title}</h5>
       <div className={`time-lesson`}>
         <div className={`icon-span`}>
-          <TimeIcon />
+          <TimeIcon className={`main-icon`} />
           <span>{time}</span>
         </div>
 
         <div className={`icon-span`}>
-          <BookIcon />
+          <BookIcon className={`main-icon`} />
           <span>{lessons} Lessons</span>
         </div>
       </div>

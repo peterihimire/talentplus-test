@@ -138,9 +138,10 @@ const BrowseCourses = () => {
               <div className={`tab-content`}>
                 {tabIndex === 1 && (
                   <div className={`grid-container`}>
-                    {courses.map((course) => {
+                    {courses.map((course, index) => {
                       return (
                         <CourseCard
+                          key={index}
                           id={course.id}
                           title={course.title}
                           price={course.price}
@@ -159,9 +160,10 @@ const BrowseCourses = () => {
                 )}
                 {tabIndex === 2 && (
                   <div className={`grid-container`}>
-                    {courses.map((course) => {
+                    {courses.map((course, index) => {
                       return (
                         <CourseCard
+                          key={index}
                           id={course.id}
                           title={course.title}
                           price={course.price}
@@ -181,9 +183,10 @@ const BrowseCourses = () => {
 
                 {tabIndex === 3 && (
                   <div className={`grid-container`}>
-                    {courses.map((course) => {
+                    {courses.map((course, index) => {
                       return (
                         <CourseCard
+                          key={index}
                           id={course.id}
                           title={course.title}
                           price={course.price}
@@ -202,9 +205,10 @@ const BrowseCourses = () => {
                 )}
                 {tabIndex === 4 && (
                   <div className={`grid-container`}>
-                    {courses.map((course) => {
+                    {courses.map((course, index) => {
                       return (
                         <CourseCard
+                          key={index}
                           id={course.id}
                           title={course.title}
                           price={course.price}

@@ -31,7 +31,7 @@ const Faq = () => {
             <li>
               <button onClick={() => toggler(0)}>
                 <div className={`head-info`}>
-                  <span>Is there a free plan available?</span>
+                  <span>Is there a free trial available?</span>
                 </div>
                 <div className={`rotate`}>
                   {clicked === 0 ? <Minus /> : <Plus />}
