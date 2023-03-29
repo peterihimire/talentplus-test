@@ -1,10 +1,7 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import CustomTab from "../../../ui/customTab";
 import CourseCard from "../../../ui/courseCard";
-import course3 from "../../../../assets/images/intro-marketing.png";
-import course1 from "../../../../assets/images/intro-new-marketing.png";
-import course2 from "../../../../assets/images/intro-user-research.png";
-import pix from "../../../../assets/images/client-1.png";
+import { COURSES } from "../../../../utils/lists";
 
 import "./styles.scss";
 
@@ -14,87 +11,6 @@ const BrowseCourses = () => {
   const tabIndexHandler = (index) => {
     setTabIndex(index);
   };
-
-  const courses = [
-    {
-      id: "01",
-      price: 25,
-      time: "10hrs 50mins",
-      category: "marketing",
-      title: "Introduction to live  marketing analysis",
-      instructor: "Adam smith",
-      lessons: 5,
-      star: 4.7,
-      reviews: 2.5,
-      image: course1,
-      pix: pix,
-    },
-    {
-      id: "02",
-      price: 45,
-      time: "10hrs 50mins",
-      category: "marketing",
-      title: "Introduction to  new marketing audience ",
-      instructor: "Adam smith",
-      lessons: 5,
-      star: 4.7,
-      reviews: 2.5,
-      image: course2,
-      pix: pix,
-    },
-    {
-      id: "03",
-      price: 25,
-      time: "10hrs 50mins",
-      category: "marketing",
-      title: "Introduction to javascript, git & GitHub",
-      instructor: "Adam smith",
-      lessons: 5,
-      star: 4.7,
-      reviews: 2.5,
-      image: course3,
-      pix: pix,
-    },
-    {
-      id: "04",
-      price: 25,
-      time: "10hrs 50mins",
-      category: "marketing",
-      title: "Introduction to outroom  marketing analysis",
-      instructor: "Adam smith",
-      lessons: 5,
-      star: 4.7,
-      reviews: 2.5,
-      image: course2,
-      pix: pix,
-    },
-    {
-      id: "05",
-      price: 25,
-      time: "10hrs 50mins",
-      category: "marketing",
-      title: "Introduction to html, css & bootstrap",
-      instructor: "Adam smith",
-      lessons: 5,
-      star: 4.7,
-      reviews: 2.5,
-      image: course1,
-      pix: pix,
-    },
-    {
-      id: "06",
-      price: 25,
-      time: "10hrs 50mins",
-      category: "marketing",
-      title: "Introduction to user research in ux design",
-      instructor: "Adam smith",
-      lessons: 5,
-      star: 4.7,
-      reviews: 2.5,
-      image: course3,
-      pix: pix,
-    },
-  ];
 
   const tabHeaders = [
     {
@@ -138,7 +54,7 @@ const BrowseCourses = () => {
               <div className={`tab-content`}>
                 {tabIndex === 1 && (
                   <div className={`grid-container`}>
-                    {courses.map((course, index) => {
+                    {COURSES.map((course, index) => {
                       return (
                         <CourseCard
                           key={index}
@@ -160,7 +76,7 @@ const BrowseCourses = () => {
                 )}
                 {tabIndex === 2 && (
                   <div className={`grid-container`}>
-                    {courses.map((course, index) => {
+                    {COURSES.map((course, index) => {
                       return (
                         <CourseCard
                           key={index}
@@ -183,7 +99,7 @@ const BrowseCourses = () => {
 
                 {tabIndex === 3 && (
                   <div className={`grid-container`}>
-                    {courses.map((course, index) => {
+                    {COURSES.map((course, index) => {
                       return (
                         <CourseCard
                           key={index}
@@ -205,7 +121,7 @@ const BrowseCourses = () => {
                 )}
                 {tabIndex === 4 && (
                   <div className={`grid-container`}>
-                    {courses.map((course, index) => {
+                    {COURSES.map((course, index) => {
                       return (
                         <CourseCard
                           key={index}

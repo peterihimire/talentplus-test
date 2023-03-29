@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ReactComponent as Plus } from "../../../../assets/images/plus.svg";
 import { ReactComponent as Minus } from "../../../../assets/images/minus.svg";
+import { FAQS } from "../../../../utils/lists";
 
 import "./styles.scss";
 
@@ -15,44 +16,6 @@ const Faq = () => {
     }
   };
 
-  const FAQS = [
-    {
-      id: 1,
-      title: "Is there a free trial available?",
-      content:
-        "High-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition.",
-    },
-    {
-      id: 2,
-      title: "Can I change my plan later?",
-      content:
-        "High-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition.",
-    },
-    {
-      id: 3,
-      title: "Are the courses lifetime?",
-      content:
-        "High-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition.",
-    },
-    {
-      id: 4,
-      title: "Do I get certified after taking courses?",
-      content:
-        "High-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition.",
-    },
-    {
-      id: 5,
-      title: "How do I reach out to mentors?",
-      content:
-        "High-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition.",
-    },
-    {
-      id: 6,
-      title: "Do we get job ready after taking courses?",
-      content:
-        "High-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition.",
-    },
-  ];
   return (
     <section className={`faq`}>
       <div className="wrapper">

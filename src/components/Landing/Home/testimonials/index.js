@@ -1,14 +1,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Autoplay, Pagination } from "swiper";
-import testimonialPix from "../../../../assets/images/client-1.png";
+import { TESTIMONIALS } from "../../../../utils/lists";
 
 import "./styles.scss";
 
 SwiperCore.use([Navigation, Autoplay, Pagination]);
-
-// SwiperCore.use([Pagination]);
-// SwiperCore.use([Autoplay]);
 
 const Testimonials = () => {
   const pagination = {
@@ -43,9 +40,6 @@ const Testimonials = () => {
               2500: { slidesPerView: 3 },
             }}
             spaceBetween={20}
-            // slidesPerView={3.5}
-            // autoHeight={true}
-            // centeredSlides={true}
             className="swiper-wrapper"
             pagination={pagination}
             navigation
@@ -59,159 +53,25 @@ const Testimonials = () => {
               waitForTransition: true,
             }}
           >
-            <SwiperSlide>
-              <div className={`testimony-item`}>
-                <p>
-                  High-defination video is video of higher resolution and
-                  quality than standard definition. high-defination video is
-                  video of higher resolution and quality than standard
-                  definition. hbuild your future with our quality education. the
-                  best and largest all-in-one online tutoring platform in the
-                  worldd definition. high-defination video is video of higher
-                  resolution and quality than standard definition. build your
-                  future with our quality education. the best and largest
-                  all-in-one online tutoring platform in the world
-                </p>
-                <div className={`testimony-info`}>
-                  <div className={`left`}>
-                    <img alt="" src={testimonialPix} />
-                  </div>
+            {TESTIMONIALS.map((testimony, index) => {
+              return (
+                <SwiperSlide>
+                  <div className={`testimony-item`} key={index}>
+                    <p>{testimony.testimony}</p>
+                    <div className={`testimony-info`}>
+                      <div className={`left`}>
+                        <img alt="" src={testimony.image} />
+                      </div>
 
-                  <div className={`right`}>
-                    <span>Kelly Hudson</span>
-                    <span>Product Designer</span>
+                      <div className={`right`}>
+                        <span>{testimony.name}</span>
+                        <span>{testimony.position}</span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className={`testimony-item`}>
-                <p>
-                  High-defination video is video of higher resolution and
-                  quality than standard definition. high-defination video is
-                  video of higher resolution and quality than standard
-                  definition. hbuild your future with our quality education. the
-                  best and largest all-in-one online tutoring platform in the
-                  worldd definition. high-defination video is video of higher
-                  resolution and quality than standard definition. build your
-                  future with our quality education. the best and largest
-                  all-in-one online tutoring platform in the world
-                </p>
-                <div className={`testimony-info`}>
-                  <div className={`left`}>
-                    <img alt="" src={testimonialPix} />
-                  </div>
-
-                  <div className={`right`}>
-                    <span>Kelly Hudson</span>
-                    <span>Product Designer</span>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className={`testimony-item`}>
-                <p>
-                  High-defination video is video of higher resolution and
-                  quality than standard definition. high-defination video is
-                  video of higher resolution and quality than standard
-                  definition. hbuild your future with our quality education. the
-                  best and largest all-in-one online tutoring platform in the
-                  worldd definition. high-defination video is video of higher
-                  resolution and quality than standard definition. build your
-                  future with our quality education. the best and largest
-                  all-in-one online tutoring platform in the world
-                </p>
-                <div className={`testimony-info`}>
-                  <div className={`left`}>
-                    <img alt="" src={testimonialPix} />
-                  </div>
-
-                  <div className={`right`}>
-                    <span>Kelly Hudson</span>
-                    <span>Product Designer</span>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={`testimony-item`}>
-                <p>
-                  High-defination video is video of higher resolution and
-                  quality than standard definition. high-defination video is
-                  video of higher resolution and quality than standard
-                  definition. hbuild your future with our quality education. the
-                  best and largest all-in-one online tutoring platform in the
-                  worldd definition. high-defination video is video of higher
-                  resolution and quality than standard definition. build your
-                  future with our quality education. the best and largest
-                  all-in-one online tutoring platform in the world
-                </p>
-                <div className={`testimony-info`}>
-                  <div className={`left`}>
-                    <img alt="" src={testimonialPix} />
-                  </div>
-
-                  <div className={`right`}>
-                    <span>Kelly Hudson</span>
-                    <span>Product Designer</span>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={`testimony-item`}>
-                <p>
-                  High-defination video is video of higher resolution and
-                  quality than standard definition. high-defination video is
-                  video of higher resolution and quality than standard
-                  definition. hbuild your future with our quality education. the
-                  best and largest all-in-one online tutoring platform in the
-                  worldd definition. high-defination video is video of higher
-                  resolution and quality than standard definition. build your
-                  future with our quality education. the best and largest
-                  all-in-one online tutoring platform in the world
-                </p>
-                <div className={`testimony-info`}>
-                  <div className={`left`}>
-                    <img alt="" src={testimonialPix} />
-                  </div>
-
-                  <div className={`right`}>
-                    <span>Kelly Hudson</span>
-                    <span>Product Designer</span>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={`testimony-item`}>
-                <p>
-                  High-defination video is video of higher resolution and
-                  quality than standard definition. high-defination video is
-                  video of higher resolution and quality than standard
-                  definition. hbuild your future with our quality education. the
-                  best and largest all-in-one online tutoring platform in the
-                  worldd definition. high-defination video is video of higher
-                  resolution and quality than standard definition. build your
-                  future with our quality education. the best and largest
-                  all-in-one online tutoring platform in the world
-                </p>
-                <div className={`testimony-info`}>
-                  <div className={`left`}>
-                    <img alt="" src={testimonialPix} />
-                  </div>
-
-                  <div className={`right`}>
-                    <span>Kelly Hudson</span>
-                    <span>Product Designer</span>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-           
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
           <div className={`custom-pag`}></div>
         </div>
