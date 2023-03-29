@@ -34,7 +34,7 @@ const BrowseCourses = () => {
     <section className={`browse-courses`}>
       <div className="wrapper">
         <div>
-          <div className={`featured-head`}>
+          <div className={`browse-head`}>
             <h3>Browse our popular courses</h3>
             <p>
               High-defination video is video of higher resolution and quality

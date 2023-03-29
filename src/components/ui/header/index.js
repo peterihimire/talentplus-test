@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Nav from "../nav";
 import { useLocation } from "react-router-dom";
-// import { ReactComponent as Logo } from "../../../assets/images/logo.svg";
 import logo from "../../../assets/images/logo.svg";
-import logoBlack from "../../../assets/images/logo-black.svg";
+
 import "./styles.scss";
 
 const Header = ({ isOpen, clicked }) => {
@@ -67,13 +66,7 @@ const Header = ({ isOpen, clicked }) => {
             className={`hamburger hamburger--spin ${isOpen ? "is-active" : ""}`}
           >
             <span className="hamburger-box">
-              <span
-                className={`${
-                  bgChange
-                    ? "hamburger-inner hamburger-inner-light"
-                    : "hamburger-inner hamburger-inner-light"
-                }`}
-              ></span>
+              <span className={"hamburger-inner hamburger-inner-light"}></span>
             </span>
           </button>
         </div>

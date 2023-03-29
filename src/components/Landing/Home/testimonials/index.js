@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Autoplay, Pagination } from "swiper";
+import TestimonyCard from "../../../ui/testimonyCard";
 import { TESTIMONIALS } from "../../../../utils/data";
 
 import "./styles.scss";
@@ -55,20 +56,15 @@ const Testimonials = () => {
           >
             {TESTIMONIALS.map((testimony, index) => {
               return (
-                <SwiperSlide>
-                  <div className={`testimony-item`} key={index}>
-                    <p>{testimony.testimony}</p>
-                    <div className={`testimony-info`}>
-                      <div className={`left`}>
-                        <img alt="" src={testimony.image} />
-                      </div>
-
-                      <div className={`right`}>
-                        <span>{testimony.name}</span>
-                        <span>{testimony.position}</span>
-                      </div>
-                    </div>
-                  </div>
+                <SwiperSlide key={index}>
+                  <TestimonyCard
+                    key={index}
+                    id={index}
+                    name={testimony.name}
+                    position={testimony.position}
+                    image={testimony.image}
+                    testimony={testimony.testimony}
+                  />
                 </SwiperSlide>
               );
             })}

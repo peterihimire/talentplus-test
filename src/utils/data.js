@@ -2,6 +2,9 @@ import testimonialPix from "../assets/images/client-1.png";
 import course3 from "../assets/images/intro-marketing.png";
 import course1 from "../assets/images/intro-new-marketing.png";
 import course2 from "../assets/images/intro-user-research.png";
+import course4 from "../assets/images/black-white.png";
+import course5 from "../assets/images/audience-room.png";
+import course6 from "../assets/images/code-unplash.png";
 import pix from "../assets/images/client-1.png";
 
 export const COURSES = [
@@ -54,7 +57,7 @@ export const COURSES = [
     lessons: 5,
     star: 4.7,
     reviews: 2.5,
-    image: course2,
+    image: course4,
     pix: pix,
   },
   {
@@ -67,7 +70,7 @@ export const COURSES = [
     lessons: 5,
     star: 4.7,
     reviews: 2.5,
-    image: course1,
+    image: course5,
     pix: pix,
   },
   {
@@ -80,7 +83,7 @@ export const COURSES = [
     lessons: 5,
     star: 4.7,
     reviews: 2.5,
-    image: course3,
+    image: course6,
     pix: pix,
   },
 ];

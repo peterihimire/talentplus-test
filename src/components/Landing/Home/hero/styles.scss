@@ -4,18 +4,6 @@
   position: relative;
   background-color: var(--main-color);
 
-  @keyframes bounce {
-    0% {
-      transform: translateY(-10px);
-    }
-    50% {
-      transform: translateY(10px);
-    }
-    100% {
-      transform: translateY(-10px);
-    }
-  }
-
   @media screen and (max-width: 1200px) {
     height: auto;
     padding: 200px 0px 0px;
@@ -54,8 +42,6 @@
 
       .preview-stacks {
         @media screen and (max-width: 700px) {
-          // top: 290px;
-          // right: 60px;
           position: absolute;
           bottom: -40px;
           width: 160px;
@@ -64,8 +50,21 @@
 
       .curl-arrow {
         position: absolute;
-        top: 470px;
+        top: 530px;
         right: -50px;
+
+        @media screen and (max-width: 1680px) {
+          position: absolute;
+          top: 470px;
+          right: -50px;
+        }
+
+        @media screen and (max-width: 1366px) {
+          position: absolute;
+          top: 360px;
+          right: -30px;
+          width: 70px;
+        }
 
         @media screen and (max-width: 700px) {
           top: 260px;
@@ -78,13 +77,10 @@
         font-style: normal;
         line-height: 82px;
         font-weight: 700;
-        // font-size: 64px;
         font-size: var(--font-max-one);
         margin-bottom: 30px;
-        // margin-top: -5px;
 
         @media screen and (max-width: 1680px) {
-          // font-size: 55px;
           font-size: var(--font-max-two);
           font-style: normal;
           line-height: 65px;
@@ -92,7 +88,6 @@
         }
 
         @media screen and (max-width: 700px) {
-          // font-size: 32px;
           font-size: var(--font-max-three);
           font-style: normal;
           line-height: 50px;
@@ -104,20 +99,16 @@
         max-width: 500px;
         font-style: normal;
         font-weight: 500;
-        // font-size: 16px;
         font-size: var(--font-txt-one);
         line-height: 26px;
         text-transform: capitalize;
         color: var(--white);
         margin-bottom: 30px;
-        // margin: 20px 0 40px 0;
-        // opacity: 0.7;
 
         @media screen and (max-width: 700px) {
           font-size: var(--font-txt-two);
           font-style: normal;
           max-width: 100%;
-          // margin: 20px 0 20px 0;
         }
       }
 
@@ -153,7 +144,6 @@
         button {
           margin-right: 20px;
           display: flex;
-          // align-items: center;
 
           &:last-of-type {
             margin-right: 0px;
@@ -186,12 +176,10 @@
 
         @media screen and (max-width: 1200px) {
           max-height: 400px;
-          // display: none;
         }
 
         @media screen and (max-width: 900px) {
           max-height: 400px;
-          // display: none;
         }
       }
     }

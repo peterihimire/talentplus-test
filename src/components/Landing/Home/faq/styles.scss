@@ -5,8 +5,16 @@
 
   .faq-head {
     text-align: center;
-    max-width: 800px;
     margin: 0 auto 30px auto;
+    max-width: 850px;
+
+    @media screen and (max-width: 1680px) {
+      max-width: 750px;
+    }
+
+    @media screen and (max-width: 700px) {
+      max-width: 750px;
+    }
 
     h3 {
       font-size: var(--font-medium-one);
@@ -22,7 +30,6 @@
       }
 
       @media screen and (max-width: 700px) {
-        // font-size: 24px;
         font-size: var(--font-medium-three);
         font-style: normal;
         line-height: 36px;
@@ -42,7 +49,6 @@
         font-size: var(--font-txt-two);
         font-style: normal;
         max-width: 100%;
-        // margin: 20px 0 20px 0;
       }
     }
 
@@ -88,7 +94,6 @@
       flex-direction: column;
 
       > li {
-        // background: #f2f2f2;
         border-bottom: 1px solid #eaeaea;
         border-radius: 0px;
         padding: 0px 0px;
@@ -152,7 +157,6 @@
         > .content {
           margin-top: 0px;
           border-top: 1px solid rgba(244, 244, 244, 0.5);
-          // padding: 24px 0px;
           max-height: 0;
           overflow: hidden;
           transition: max-height 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),

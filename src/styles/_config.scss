@@ -1,3 +1,4 @@
+// fonts
 @font-face {
   font-family: Satoshi-Regular;
   src: url("../assets/fonts/satoshi/Satoshi-Regular.otf");
@@ -13,6 +14,7 @@
   src: url("../assets/fonts/clashdisplay/ClashDisplay-Bold.otf");
 }
 
+// general
 *,
 ::before,
 ::after {
@@ -71,8 +73,6 @@ body._fixed {
   background: var(--main-color);
   border-radius: 2px;
 }
-
-// 1114px 1023px 900px 700px
 
 // text
 h1,
@@ -252,6 +252,7 @@ img {
   display: block;
 }
 
+// inputs
 input:not([type="radio"]),
 input:not([type="checkbox"]),
 select,
@@ -432,7 +433,6 @@ select {
   z-index: 300 !important;
   opacity: 0.9;
   visibility: hidden;
-  //  visibility: visible;
 
   &.swiper-button-disabled {
     pointer-events: all !important;

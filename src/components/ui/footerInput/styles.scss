@@ -1,20 +1,19 @@
-// mine
 .input-holder {
   display: flex;
   justify-content: center;
   align-items: center;
-  // position: relative;
-  width: 100% !important;
+  width: 100%;
+
+  @media (max-width: 705px) {
+    width: 95%;
+  }
 
   .icon-wrapper {
-    // position: absolute;
     right: 0px;
     bottom: 1px;
     font-size: 14px;
-    // padding: 13.7px 10px;
     background: var(--main-color);
-    border-radius: 0 2px 2px 0px;
-    // border-radius: var(--radius-two);
+    border-radius: 0 var(--radius-two) var(--radius-two) 0px;
     color: var(--white);
     width: 192px;
     height: 46px !important;
@@ -22,6 +21,6 @@
 
   input {
     padding: 12px;
-    border-radius: 2px 0px 0px 2px;
+    border-radius: var(--radius-two) 0px 0px var(--radius-two);
   }
 }

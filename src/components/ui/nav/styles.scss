@@ -5,37 +5,13 @@
   align-items: center;
   justify-content: space-between;
   justify-content: flex-end;
-  // margin-left: 200px;
-
-  // 2.5K
-  @media (max-width: 2560px) {
-    // margin-left: 550px;
-  }
-  // FULL HD
-  @media (max-width: 1920px) {
-    // margin-left: 330px;
-  }
-  // 13 RETINA MAC
-  @media screen and (max-width: 1680px) {
-    // margin-left: 250px;
-  }
-  // WINDOWS
-  @media screen and (max-width: 1366px) {
-    // margin-left: 330px;
-  }
-  // HD
-  @media screen and (max-width: 1280px) {
-    // margin-left: 330px;
-  }
 
   @media (max-width: 1264px) {
     position: fixed;
     top: 70px;
     left: -100vw;
-    // right: -100vw;
     z-index: 250;
     transition: left 0.4s ease-in-out;
-    // transition: right 0.4s ease-in-out;
     background: var(--main-color);
     display: initial;
     justify-content: stretch;
@@ -47,7 +23,6 @@
 
     &.show {
       left: 0;
-      // right: 0;
     }
 
     &.hidden {
@@ -88,26 +63,24 @@
       }
 
       > a {
-        font-size: 16px;
+        font-size: var(--font-txt-one);
         line-height: 22px;
-        color: #aac4e6;
-        // font-family: NotoSans-Bold, sans-serif;
+        color: var(--nav-link-color);
         text-transform: capitalize;
 
         @media (max-width: 1264px) {
-          color: #aac4e6;
-          font-size: 16px;
+          color: var(--nav-link-color);
+          font-size: var(--font-txt-one);
         }
 
         &:hover {
-          color: var(--main-color) !important;
+          color: var(--white) !important;
         }
       }
 
       .active {
         color: var(--white) !important;
-        // font-size: 16px;
-        font-family: Poppins-Bold, sans-serif;
+        font-family: Satoshi-Bold;
         font-weight: 700;
       }
     }

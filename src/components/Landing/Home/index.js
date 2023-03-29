@@ -7,11 +7,12 @@ import Testimonials from "./testimonials";
 import Faq from "./faq";
 import JoinCommunity from "./joinCommunity";
 import WeAreBest from "./weAreBest";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const HomePage = () => {
   return (
-    <div className={`homepage`}>
+    <HelmetProvider>
       <Helmet>
         <title>TechTime - Home</title>
       </Helmet>
@@ -24,7 +25,7 @@ const HomePage = () => {
       <Testimonials />
       <JoinCommunity />
       <Faq />
-    </div>
+    </HelmetProvider>
   );
 };
 

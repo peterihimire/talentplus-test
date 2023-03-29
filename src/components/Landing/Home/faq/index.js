@@ -32,7 +32,7 @@ const Faq = () => {
           <ul className={`accordion`}>
             {FAQS.map((faq, index) => {
               return (
-                <li>
+                <li key={index}>
                   <button onClick={() => toggler(faq.id)}>
                     <div className={`head-info`}>
                       <span>{faq.title}</span>
