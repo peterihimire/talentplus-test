@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Autoplay, Pagination } from "swiper";
-import { TESTIMONIALS } from "../../../../utils/lists";
+import { TESTIMONIALS } from "../../../../utils/data";
 
 import "./styles.scss";
 

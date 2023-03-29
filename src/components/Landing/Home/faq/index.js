@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ReactComponent as Plus } from "../../../../assets/images/plus.svg";
 import { ReactComponent as Minus } from "../../../../assets/images/minus.svg";
-import { FAQS } from "../../../../utils/lists";
+import { FAQS } from "../../../../utils/data";
 
 import "./styles.scss";
 

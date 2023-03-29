@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CustomTab from "../../../ui/customTab";
 import CourseCard from "../../../ui/courseCard";
-import { COURSES } from "../../../../utils/lists";
+import { COURSES } from "../../../../utils/data";
 
 import "./styles.scss";
 
