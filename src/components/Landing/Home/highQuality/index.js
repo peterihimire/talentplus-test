@@ -3,6 +3,12 @@ import guyHeadset from "../../../../assets/images/guy-on-headset.png";
 import { ReactComponent as PreviewStacksIcon } from "../../../../assets/images/preview-stacks-two.svg";
 import { ReactComponent as VolumeIcon } from "../../../../assets/images/volume-up.svg";
 import { ReactComponent as CrownIcon } from "../../../../assets/images/crown.svg";
+import { ReactComponent as NoteIcon } from "../../../../assets/images/50-notes.svg";
+import { ReactComponent as RecordIcon } from "../../../../assets/images/recorded-classes.svg";
+import { ReactComponent as LivedIcon } from "../../../../assets/images/live-classes.svg";
+import { ReactComponent as HalfIcon } from "../../../../assets/images/half-purple-circle.svg";
+import { ReactComponent as WaveIcon } from "../../../../assets/images/wave-asset-lite-green.svg";
+import { ReactComponent as DotDotIcon } from "../../../../assets/images/dot-dot.svg";
 
 import "./styles.scss";
 
@@ -33,24 +39,27 @@ const HighQuality = () => {
                   <span>Audio classes</span>
                 </div>
                 <div className={`reason-item`}>
-                  <VolumeIcon className={`reason-icon`} />{" "}
+                  <RecordIcon className={`reason-icon`} />{" "}
                   <span>Live classes</span>
                 </div>
               </div>
 
               <div className={`bottom`}>
                 <div className={`reason-item`}>
-                  <VolumeIcon className={`reason-icon`} />{" "}
+                  <NoteIcon className={`reason-icon`} />{" "}
                   <span>Recorded classes</span>
                 </div>
                 <div className={`reason-item`}>
-                  <VolumeIcon className={`reason-icon`} />{" "}
-                  <span>50+ notes</span>
+                  <LivedIcon className={`reason-icon`} /> <span>50+ notes</span>
                 </div>
               </div>
             </div>
           </div>
           <div className={`rightt`}>
+            <HalfIcon className={`half-icon`} />
+            <WaveIcon className={`wave-icon`} />
+            <DotDotIcon className={`dot-icon`} />
+
             <img src={guyHeadset} alt="" />
             <PreviewStacksIcon className={`preview-stack`} />
           </div>

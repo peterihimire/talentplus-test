@@ -36,10 +36,46 @@
 
     .leftt {
       width: 50%;
-      padding-top: 150px;
+      padding-top: 190px;
       color: var(--white);
       position: relative;
 
+      @media screen and (max-width: 1680px) {
+        width: 50%;
+        padding-top: 170px;
+        color: var(--white);
+        position: relative;
+      }
+      @media screen and (max-width: 1366px) {
+        width: 50%;
+        padding-top: 120px;
+        color: var(--white);
+        position: relative;
+      }
+
+      .wave-icon {
+        position: absolute;
+        bottom: 470px;
+        left: -170px;
+      }
+      .dot-icon {
+        position: absolute;
+        top: 90px;
+        right: 220px;
+
+        @media screen and (max-width: 700px) {
+          display: none;
+        }
+      }
+      .circle-icon {
+        position: absolute;
+        top: 90px;
+        bottom: -40px;
+
+        @media screen and (max-width: 700px) {
+          display: none;
+        }
+      }
       .preview-stacks {
         @media screen and (max-width: 700px) {
           position: absolute;

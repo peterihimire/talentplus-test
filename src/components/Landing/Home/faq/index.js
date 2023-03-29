@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { ReactComponent as Plus } from "../../../../assets/images/plus.svg";
 import { ReactComponent as Minus } from "../../../../assets/images/minus.svg";
+import { ReactComponent as WaveIcon } from "../../../../assets/images/wave-orange-asset.svg";
+import { ReactComponent as CircleIcon } from "../../../../assets/images/tiny-blue-circle.svg";
+import leftShape from "../../../../assets/images/left-shape.png";
+import rightShape from "../../../../assets/images/right-shape.png";
 import { FAQS } from "../../../../utils/data";
 
 import "./styles.scss";
@@ -18,6 +22,11 @@ const Faq = () => {
 
   return (
     <section className={`faq`}>
+      <WaveIcon className={`wave-icon`} />
+      <CircleIcon className={`circle-icon`} />
+      <img src={leftShape} alt="" className={`left-icon`} />
+      <img src={rightShape} alt="" className={`right-icon`} />
+   
       <div className="wrapper">
         <div className={`faq-head`}>
           <h3>Frequently Asked Questions </h3>

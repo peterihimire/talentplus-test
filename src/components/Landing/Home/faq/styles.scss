@@ -3,6 +3,51 @@
   background-color: var(--white);
   padding: 100px 0px;
 
+  .wave-icon {
+    position: absolute;
+    left: 0px;
+    top: 320px;
+
+    @media screen and (max-width: 700px) {
+      top: 250px;
+      left: -20px;
+      width: 40px;
+    }
+  }
+  .circle-icon {
+    position: absolute;
+    right: 200px;
+    top: 120px;
+
+    @media screen and (max-width: 700px) {
+      top: 70px;
+      right: 10px;
+      width: 12px;
+    }
+  }
+
+  .right-icon {
+    position: absolute;
+    width: 60px;
+    right: 0px;
+    top: 0px;
+
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+  }
+
+  .left-icon {
+    position: absolute;
+    width: 60px;
+    left: 0px;
+    bottom: 0px;
+
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+  }
+
   .faq-head {
     text-align: center;
     margin: 0 auto 30px auto;
