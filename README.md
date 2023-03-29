@@ -10,20 +10,20 @@
 
 ## General info
 
-This is Talent-plus test project, bootstrapped with create-react-app and docker.
+This is Talent-plus test project, bootstrapped with create-react-app, docker and nginx webserver.
 
 ## Technologies
 
 Project is created with:
 
 - Node version: node:19.6.0-alpine
-- React version: 4.18.2
-- React-Router-DOM version: 2.4.3
-- Swiper version: 8.10.0
-- React-Helmet version: 2.3.4
-- Hamburgers version: 6.29.2
-- Docker
-- Nginx
+- React version: 18.2.0
+- React-Router-DOM version: 6.9.0
+- Swiper version: 9.1.1
+- React-Helmet-Async version: 1.3.0
+- Hamburgers version: 1.2.1
+- Docker version: 3.8
+- Nginx version: 1.21.0-alpine
 
 ## Setup
 
@@ -35,6 +35,8 @@ $ cd talentplus-test
 $ docker-compose -f docker-compose.prod.yml build
 $ docker run -p 80:80 --name talentplus-app talentplus-test-prod
 
+
+Then visit ( http://localhost:80 ) to see the live static website on production mode.
 ```
 
 ## Sources
@@ -44,4 +46,4 @@ thats it [@techtime](https://)
 
 ## Demo
 
-You can view the live API's of this application by visiting this [link](https://)
+You can view the live website of this application by visiting this [link](https://)
