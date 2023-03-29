@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CustomTab from "../../../ui/customTab";
 import CourseCard from "../../../ui/courseCard";
+import { ReactComponent as CrossPlus } from "../../../../assets/images/x-plus.svg";
 import { COURSES } from "../../../../utils/data";
 
 import "./styles.scss";
@@ -33,16 +34,17 @@ const BrowseCourses = () => {
   return (
     <section className={`browse-courses`}>
       <div className="wrapper">
-        <div>
-          <div className={`browse-head`}>
-            <h3>Browse our popular courses</h3>
-            <p>
-              High-defination video is video of higher resolution and quality
-              than standard definition. while there’s no standard meaning for
-              high definition, generally any standard video image
-            </p>
-          </div>
+        {/* <div> */}
+        <div className={`browse-head`}>
+          <CrossPlus className={`cross-plus`} />
+          <h3>Browse our popular courses</h3>
+          <p>
+            High-defination video is video of higher resolution and quality than
+            standard definition. while there’s no standard meaning for high
+            definition, generally any standard video image
+          </p>
         </div>
+        {/* </div> */}
 
         <div className={`cat-carousel`}>
           <div>

@@ -16,12 +16,6 @@
     padding: 100px 0px 0px;
   }
 
-  .indicator {
-    animation: bounce;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-  }
-
   .container {
     display: flex;
     justify-content: space-between;
@@ -52,6 +46,11 @@
         @media screen and (max-width: 1200px) {
           top: -32px;
           left: -6px;
+        }
+        @media screen and (max-width: 600px) {
+          top: -28px;
+          left: 25px;
+          width: 30px;
         }
       }
 
